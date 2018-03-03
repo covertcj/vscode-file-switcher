@@ -4,9 +4,11 @@ import { regexSwitch } from './regexSwitch';
 // import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
-    let disposable = vscode.commands.registerCommand('extension.file-switcher.regex-switch', regexSwitch);
+    let disposables = [
+        vscode.commands.registerCommand('extension.file-switcher.regex-switch', regexSwitch)
+    ];
 
-    context.subscriptions.push(disposable);
+    context.subscriptions = [ ...context.subscriptions, ...disposables ];
 }
 
 export function deactivate() {
