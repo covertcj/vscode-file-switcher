@@ -19,3 +19,7 @@ export const getCycleCandidates = (
         concat(canditatesBeforeCurrent$)
     );
 };
+
+export const cycleExtensions = async () => {
+
+};

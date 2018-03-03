@@ -5,7 +5,8 @@ import { regexSwitch } from './regexSwitch';
 
 export function activate(context: vscode.ExtensionContext) {
     let disposables = [
-        vscode.commands.registerCommand('extension.file-switcher.regex-switch', regexSwitch)
+        vscode.commands.registerCommand('extension.file-switcher.regex-switch', regexSwitch),
+        vscode.commands.registerCommand('extension.file-switcher.cycle-exensions', regexSwitch)
     ];
 
     context.subscriptions = [ ...context.subscriptions, ...disposables ];

@@ -11,7 +11,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.file-switcher.regex-switch"
+        "onCommand:extension.file-switcher.regex-switch",
+        "onCommand:extension.file-switcher.cycle-extensions"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -19,6 +20,10 @@
             {
                 "command": "extension.file-switcher.regex-switch",
                 "title": "Regex switch"
+            },
+            {
+                "command": "extension.file-switcher.cycle-extensions",
+                "title": "Cycle Extensions"
             }
         ],
         "configuration": {
@@ -36,7 +41,13 @@
                     "description": "The extensions to cycle through"
                 }
             }
-        }
+        },
+        "keybindings":[
+            {
+                "command": "extension.file-switcher.cycle-extensions",
+                "key": "ctrl+alt+f"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
