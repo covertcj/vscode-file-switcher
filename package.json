@@ -33,7 +33,7 @@
                 "fileSwitcher.strippableSuffixes": {
                     "type": "array",
                     "default": [],
-                    "description": "When switching extensions, supplied suffixes will be stripped from the filename.  Usefull for removing things like '.spec'."
+                    "description": "(Not Implemented) When switching extensions, supplied suffixes will be stripped from the filename.  Usefull for removing things like '.spec'."
                 },
                 "fileSwitcher.extensions": {
                     "type": "array",
