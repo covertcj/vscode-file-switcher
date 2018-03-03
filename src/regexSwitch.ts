@@ -29,4 +29,4 @@ export const regexSwitch = async (patterns?: RegExpPair[]) => {
 
             break;
         }
-    });
+    };
