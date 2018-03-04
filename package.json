@@ -34,12 +34,22 @@
                 "fileSwitcher.strippableSuffixes": {
                     "type": "array",
                     "default": [],
-                    "description": "(Not Implemented) When switching extensions, supplied suffixes will be stripped from the filename.  Usefull for removing things like '.spec'."
+                    "description": "When switching extensions, supplied suffixes will be stripped from the filename.  Usefull for removing things like '.spec'."
                 },
-                "fileSwitcher.extensions": {
+                "fileSwitcher.searchableSubdirs": {
                     "type": "array",
                     "default": [],
-                    "description": "The extensions to cycle through"
+                    "description": "(Not Implemented) The sbudirectories to search into/out of"
+                },
+                "fileSwitcher.pathMappings": {
+                    "type": "array",
+                    "default": [],
+                    "description": "(Not Implemented) A list of path mappings for switching to files in distant directories"
+                },
+                "fileSwitcher.replaceCurrentFile": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "(Not Implemented) If true, the current file will be closed when switching away"
                 }
             }
         },
