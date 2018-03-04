@@ -1,0 +1,7 @@
+{
+    "fileSwitcher.strippableSuffixes": [ ".test", "[_.]?[Ss]pec" ],
+    "fileSwitcher.searchableSubdirs": [ "spec" ],
+    "fileSwitcher.pathMappings": [
+        ["(.*)/src/(.*)", "$1/src/test/$2"]
+    ]
+}
