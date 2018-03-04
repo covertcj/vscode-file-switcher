@@ -14,6 +14,7 @@
         "onCommand:extension.file-switcher.regex-switch",
         "onCommand:extension.file-switcher.cycle-extensions"
     ],
+    "repository": "https://github.com/covertcj/vscode-file-switcher",
     "main": "./out/extension",
     "contributes": {
         "commands": [
