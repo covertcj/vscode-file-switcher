@@ -1,15 +1,11 @@
 'use strict';
 import * as vscode from 'vscode';
 import { regexSwitch } from './regexSwitch';
-// import * as path from 'path';
+import { cycleExtensions } from './cycleExtensions';
 
 export function activate(context: vscode.ExtensionContext) {
-    let disposables = [
-        vscode.commands.registerCommand('extension.file-switcher.regex-switch', regexSwitch),
-        vscode.commands.registerCommand('extension.file-switcher.cycle-exensions', regexSwitch)
-    ];
-
-    context.subscriptions = [ ...context.subscriptions, ...disposables ];
+    context.subscriptions.push(vscode.commands.registerCommand('extension.file-switcher.regex-switch', regexSwitch));
+    context.subscriptions.push(vscode.commands.registerCommand('extension.file-switcher.cycle-extensions', cycleExtensions));
 }
 
 export function deactivate() {
