@@ -9,3 +9,8 @@ export const stripSuffixes = (path: string, strippableSuffixes: string[]) => {
 
     return path;
 };
+
+const extensionRegex = /(.+)\.([^.]*)/;
+export const stripExtension = (path: string) => {
+    return path.replace(extensionRegex, '$1');
+};
