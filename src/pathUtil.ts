@@ -1,3 +1,6 @@
+import { access } from "fs";
+import { F_OK } from "constants";
+
 export const stripSuffixes = (path: string, strippableSuffixes: string[]) => {
     for (const suffix of strippableSuffixes) {
         const suffixRegex = new RegExp(`${suffix}$`);
@@ -13,4 +16,12 @@ export const stripSuffixes = (path: string, strippableSuffixes: string[]) => {
 const extensionRegex = /(.+)\.([^.]*)/;
 export const stripExtension = (path: string) => {
     return path.replace(extensionRegex, '$1');
+};
+
+export const exists = async (path: string): Promise<boolean> => {
+    return new Promise<boolean>((resolve, reject) => {
+        access(path, F_OK, (err) => {
+            resolve(!err);
+        });
+    });
 };
