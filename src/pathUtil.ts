@@ -19,7 +19,7 @@ export const stripExtension = (path: string) => {
 };
 
 export const exists = async (path: string): Promise<boolean> => {
-    return new Promise<boolean>((resolve, reject) => {
+    return new Promise<boolean>((resolve) => {
         access(path, F_OK, (err) => {
             resolve(!err);
         });
