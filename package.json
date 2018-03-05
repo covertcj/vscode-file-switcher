@@ -54,7 +54,7 @@
                 }
             }
         },
-        "keybindings":[
+        "keybindings": [
             {
                 "command": "extension.file-switcher.cycle-extensions",
                 "key": "ctrl+alt+f"
@@ -76,7 +76,5 @@
         "typescript": "^2.6.1",
         "vscode": "^1.1.6"
     },
-    "dependencies": {
-        "rxjs": "^5.5.6"
-    }
+    "dependencies": {}
 }
