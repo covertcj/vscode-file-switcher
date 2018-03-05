@@ -20,10 +20,6 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.file-switcher.regex-switch",
-                "title": "Regex switch"
-            },
-            {
                 "command": "extension.file-switcher.cycle-extensions",
                 "title": "Cycle Extensions"
             }
