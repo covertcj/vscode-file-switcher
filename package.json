@@ -11,8 +11,9 @@
         "Other"
     ],
     "activationEvents": [
+        "onCommand:extension.file-switcher.cycle-extensions",
         "onCommand:extension.file-switcher.regex-switch",
-        "onCommand:extension.file-switcher.cycle-extensions"
+        "onCommand:extension.file-switcher.switch-to-extension"
     ],
     "repository": "https://github.com/covertcj/vscode-file-switcher",
     "main": "./out/extension",
